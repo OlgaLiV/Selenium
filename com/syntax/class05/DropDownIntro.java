@@ -16,11 +16,11 @@ public class DropDownIntro {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
-		
+
 		WebElement daysDD = driver.findElement(By.id("select-demo"));
 		Select select = new Select(daysDD); // WebElement in DOM must have <select> tag then we can use Select class
-		
-		//select.selectByIndex(2); //select by Index
+
+		// select.selectByIndex(2); //select by Index
 //		Thread.sleep(1000);
 //		
 //		select.selectByVisibleText("Wednesday"); //select by Text
@@ -28,16 +28,16 @@ public class DropDownIntro {
 //		
 //		select.selectByValue("Sunday");
 //		Thread.sleep(1000);
-		
-		 List<WebElement> options = select.getOptions();
-		 int size = options.size();
-		 System.out.println(size);
-		 
-		 for(int i = 0; i < size; i++) {
-			 select.selectByIndex(i);
-			 Thread.sleep(1000);
-			 
-		 }
+
+		List<WebElement> options = select.getOptions();
+		int size = options.size();
+		System.out.println(size);
+
+		for (int i = 0; i < size; i++) {
+			select.selectByIndex(i);
+			Thread.sleep(1000);
+
+		}
 
 	}
 

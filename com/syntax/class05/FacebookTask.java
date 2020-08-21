@@ -15,6 +15,7 @@ public class FacebookTask {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
+		driver.manage().window().maximize();
 
 		driver.findElement(By.xpath("//input[@id = 'u_0_n']")).sendKeys("Julia");
 		driver.findElement(By.id("u_0_p")).sendKeys("Roberts");
