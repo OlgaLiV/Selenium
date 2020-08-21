@@ -31,9 +31,9 @@ public class HandleDynamicTable {
 			String rowText = rows.get(i).getText();
 			System.out.println(rowText);
 			
-			if(rowText.contains("Bob Feather")) {
+			if(rowText.contains("FamilyAlbum")) {
 				driver.findElements(By.xpath("//table[@id = 'ctl00_MainContent_orderGrid']/tbody/tr/td[1]")).get(i-1).click();
-				break;
+				//break;
 			}
 		}
 		
