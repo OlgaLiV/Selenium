@@ -217,12 +217,12 @@ public class BigHomeWork {
 		System.out.println("Prompt alert text is: " + alert.getText());
 		alert.accept();
 		
-//		WebElement launchModal = driver.findElement(By.xpath("//button[@data-target = '#myModal']"));
-//		launchModal.click();
-//		String modalText = driver.findElement(By.xpath("//div[@class = 'modal-body']")).getText();
-//		System.out.println(modalText);
-//		WebElement closeButton = driver.findElement(By.xpath("//button[@class = 'btn btn-default']"));
-//		closeButton.click();
+		WebElement launchModal = driver.findElement(By.xpath("//button[@data-target = '#myModal']"));
+		launchModal.click();
+		String modalText = driver.findElement(By.xpath("//div[@class = 'modal-body']")).getText();
+		System.out.println(modalText);
+		WebElement closeButton = driver.findElement(By.xpath("//button[@class = 'btn btn-default']"));
+		closeButton.click();
 		
 		driver.switchTo().frame("iframe_a");
 		WebElement inputText = driver.findElement(By.id("name"));
