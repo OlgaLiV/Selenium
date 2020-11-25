@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class JavaScriptExecutorDemo {
-	public static String url = "http://166.62.36.207/humanresources/symfony/web/index.php/auth/login";
+	public static String url = "http://18.232.148.34/humanresources/symfony/web/index.php/auth/login";
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");

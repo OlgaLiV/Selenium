@@ -29,8 +29,10 @@ public class WebTablesWithPagination {
 					System.out.println(rowText);
 					break;
 				}
+				
 			}
 			next.click();
+			
 		}
 		driver.quit();
 

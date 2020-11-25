@@ -14,8 +14,10 @@ public class LoginPageWithFindBy extends BaseClass{
 	@FindBy(xpath = "//input[@id = 'txtPassword']")
 	public WebElement passwordTextBox;
 	
-	@FindBy(css = "input#btnLogin")
+	@FindBy(id = "btnLogin")
 	public WebElement loginBtn;
+	
+
 	
 //	@FindBy(xpath = "//table[@id = 'resultTable']/tbody/tr")
 //	public List<WebElement> table;

@@ -19,7 +19,7 @@ public class FileUploadDemo {
 		fileUpload.click();
 		
 		WebElement chooseFile = driver.findElement(By.id("file-upload"));
-		chooseFile.sendKeys("/Users/alexandrrudenko/eclipse-workspace/JavaBasics/testdata/SampleTestData.xlsx");
+		chooseFile.sendKeys("/Users/alexandrrudenko/eclipse-workspace/JavaBasics/testdata/MyFile.xlsx");
 		
 		WebElement submitButton = driver.findElement(By.id("file-submit"));
 		submitButton.click();

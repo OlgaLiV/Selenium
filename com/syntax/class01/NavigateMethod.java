@@ -9,7 +9,7 @@ public class NavigateMethod {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://google.com");
 		Thread.sleep(3000); // paused for 3 sec
-		// driver.navigate().to("http://facebook.com"); // opens google and then fb in
+		 //driver.navigate().to("http://facebook.com"); // opens google and then fb in
 		// one tab
 //		driver.navigate().back();
 //		driver.navigate().forward();		

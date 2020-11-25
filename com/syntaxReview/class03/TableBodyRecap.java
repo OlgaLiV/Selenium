@@ -35,7 +35,7 @@ public class TableBodyRecap {
 
 		for (int i = 1; i < idList.size(); i++) {
 			String idText = idList.get(i).getText();
-			if (idText.equals("0009")) {
+			if (idText.equals("0002")) {
 				checkbox.get(i).click();
 				Thread.sleep(3000);
 				driver.findElement(By.id("btnDelete")).click();
